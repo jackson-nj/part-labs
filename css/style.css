@@ -497,7 +497,7 @@
 }
 
 .footer a:hover {
-    color: #E84404 !important;
+    color: #E30220 !important;
 }
 
 .footer .btn-outline-primary {
@@ -505,8 +505,8 @@
 }
 
 .footer .btn-outline-primary:hover {
-    background-color: #E84404 !important;
-    border-color: #E84404 !important;
+    background-color: #E30220 !important;
+    border-color: #E30220 !important;
 }
 
 @keyframes footerScrollBg {
@@ -535,7 +535,7 @@
 
 .marquee-content {
     display: flex;
-    animation: scrollMarquee 90s linear infinite;
+    animation: scrollMarquee 70s linear infinite;
     white-space: nowrap;
 }
 
