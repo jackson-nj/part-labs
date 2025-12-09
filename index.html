@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Part Labs - Web Development Studio for Modern Brands</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="web development, web design, conversion-focused websites, digital strategy" name="keywords">
+    <meta content="Part Labs - A forward-driven web development studio building conversion-focused websites" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <img src="img/logo.png" alt="Part Labs Logo" style="height: 50px;">
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex">
+                    <a class="btn btn-outline-primary border-2" href="#contact">Get In Touch</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="title mx-5 px-5 animated slideInDown">
+                            <div class="title-center">
+                                <h5>Welcome to</h5>
+                                <h1 class="display-1 fw-bold" style="font-family: 'Poppins', sans-serif; letter-spacing: 3px;">PART LABS</h1>
+                            </div>
+                        </div>
+                        <p class="fs-5 mb-5 animated slideInDown">Modern design and serious digital performance.<br>Conversion-focused websites that build trust instantly.</p>
+                        <a href="service.html" class="btn btn-outline-primary border-2 py-3 px-5 animated slideInDown">See Our Work</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="title mx-5 px-5 animated slideInDown">
+                            <div class="title-center">
+                                <h5>Our Approach</h5>
+                                <h1 class="display-1 fw-bold" style="font-family: 'Poppins', sans-serif; letter-spacing: 3px;">PART LABS</h1>
+                            </div>
+                        </div>
+                        <p class="fs-5 mb-5 animated slideInDown">Every project blends strategy, design, and smart development.<br>Precision-crafted from structure to deployment.</p>
+                        <a href="about.html" class="btn btn-outline-primary border-2 py-3 px-5 animated slideInDown">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid bg-secondary">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7 pb-0 pb-lg-5 py-5">
+                    <div class="pb-0 pb-lg-5 py-5">
+                        <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="title-left">
+                                <h5>About Us</h5>
+                                <h1>Part Labs Studio</h1>
+                            </div>
+                        </div>
+                        <p class="mb-4 wow fadeInUp" data-wow-delay="0.2s">Part Labs is a forward-driven web development studio built for brands that want sharp execution, modern design, and serious digital performance. We don't do generic. We build clean, fast, conversion-focused websites engineered to make people trust your brand the moment they land on your page.</p>
+                        <ul class="list-group list-group-flush mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                                <i class="fa fa-check-circle text-primary me-1"></i> Strategy-Driven Design & Development
+                            </li>
+                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                                <i class="fa fa-check-circle text-primary me-1"></i> Conversion-Focused Architecture
+                            </li>
+                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                                <i class="fa fa-check-circle text-primary me-1"></i> Fast, Clean, and Trust-Building
+                            </li>
+                        </ul>
+                        <div class="row wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="col-6">
+                                <a href="service.html" class="btn btn-outline-primary border-2 py-3 w-100">View Our Work</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="contact.html" class="btn btn-primary py-3 w-100">Start a Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/about.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Creative Services Tree Section Start -->
+    <div id="services-tree" class="services-tree position-relative overflow-hidden">
+        <div class="services-bg-image position-absolute w-100 h-100" style="background: url('img/services.jpg') 30% top/cover no-repeat; background-attachment: fixed;"></div>
+        <div class="services-overlay position-absolute w-100 h-100" style="background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.6) 50%, rgba(232,68,4,0.3) 100%);"></div>
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="py-5">
+                <!-- Header -->
+                <div class="text-center py-5 mb-5">
+                    <h5 class="text-primary wow fadeInDown" data-wow-delay="0.1s" style="letter-spacing: 3px;">WHAT WE OFFER</h5>
+                    <h1 class="display-2 fw-bold text-white wow fadeInUp" data-wow-delay="0.2s" style="font-family: 'Poppins', sans-serif;">OUR SERVICES</h1>
+                    <div class="tree-line mx-auto mt-4 wow fadeInUp" data-wow-delay="0.3s" style="width: 4px; height: 60px; background: linear-gradient(180deg, #E84404 0%, rgba(232,68,4,0.3) 100%);"></div>
+                </div>
+
+                <!-- Tree Structure -->
+                <div class="services-tree-container position-relative">
+                    <!-- Central Tree Line -->
+                    <div class="tree-trunk position-absolute start-50 translate-middle-x d-none d-lg-block" style="width: 4px; height: 100%; background: linear-gradient(180deg, #E84404 0%, rgba(232,68,4,0.5) 100%); top: 0;"></div>
+
+                    <!-- Service 1 - Left -->
+                    <div class="row align-items-center mb-5 pb-5">
+                        <div class="col-lg-5 text-lg-end wow fadeInLeft" data-wow-delay="0.1s">
+                            <div class="service-tree-card p-5 position-relative" style="background: rgba(255,255,255,0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); border-radius: 30px;">
+                                <div class="service-number position-absolute" style="top: -20px; right: 30px; font-size: 5rem; font-weight: 800; color: rgba(232,68,4,0.2); font-family: 'Poppins', sans-serif;">01</div>
+                                <div class="d-flex align-items-center justify-content-lg-end mb-4">
+                                    <h3 class="text-white text-uppercase me-3 mb-0" style="font-family: 'Poppins', sans-serif;">Custom Websites</h3>
+                                    <div class="service-icon-tree" style="width: 70px; height: 70px; background: linear-gradient(135deg, #E84404 0%, #ff6b35 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 40px rgba(232,68,4,0.5);">
+                                        <i class="fas fa-globe fa-2x text-white"></i>
+                                    </div>
+                                </div>
+                                <p class="text-light mb-0 fs-5" style="opacity: 0.85;">Unique, responsive, and built for performance. Every site we create is tailored to your brand and optimized for maximum results.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 d-none d-lg-flex justify-content-center">
+                            <div class="tree-node" style="width: 24px; height: 24px; background: #E84404; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 30px rgba(232,68,4,0.8);"></div>
+                        </div>
+                        <div class="col-lg-5"></div>
+                    </div>
+
+                    <!-- Service 2 - Right -->
+                    <div class="row align-items-center mb-5 pb-5">
+                        <div class="col-lg-5"></div>
+                        <div class="col-lg-2 d-none d-lg-flex justify-content-center">
+                            <div class="tree-node" style="width: 24px; height: 24px; background: #E84404; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 30px rgba(232,68,4,0.8);"></div>
+                        </div>
+                        <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <div class="service-tree-card p-5 position-relative" style="background: rgba(255,255,255,0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); border-radius: 30px;">
+                                <div class="service-number position-absolute" style="top: -20px; left: 30px; font-size: 5rem; font-weight: 800; color: rgba(232,68,4,0.2); font-family: 'Poppins', sans-serif;">02</div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="service-icon-tree me-3" style="width: 70px; height: 70px; background: linear-gradient(135deg, #E84404 0%, #ff6b35 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 40px rgba(232,68,4,0.5);">
+                                        <i class="fas fa-laptop-code fa-2x text-white"></i>
+                                    </div>
+                                    <h3 class="text-white text-uppercase mb-0" style="font-family: 'Poppins', sans-serif;">Web Applications</h3>
+                                </div>
+                                <p class="text-light mb-0 fs-5" style="opacity: 0.85;">Powerful, scalable solutions tailored to your needs. From dashboards to complex platforms, we build apps that work flawlessly.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 - Left -->
+                    <div class="row align-items-center mb-5 pb-5">
+                        <div class="col-lg-5 text-lg-end wow fadeInLeft" data-wow-delay="0.3s">
+                            <div class="service-tree-card p-5 position-relative" style="background: rgba(255,255,255,0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); border-radius: 30px;">
+                                <div class="service-number position-absolute" style="top: -20px; right: 30px; font-size: 5rem; font-weight: 800; color: rgba(232,68,4,0.2); font-family: 'Poppins', sans-serif;">03</div>
+                                <div class="d-flex align-items-center justify-content-lg-end mb-4">
+                                    <h3 class="text-white text-uppercase me-3 mb-0" style="font-family: 'Poppins', sans-serif;">E-Commerce</h3>
+                                    <div class="service-icon-tree" style="width: 70px; height: 70px; background: linear-gradient(135deg, #E84404 0%, #ff6b35 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 40px rgba(232,68,4,0.5);">
+                                        <i class="fas fa-shopping-bag fa-2x text-white"></i>
+                                    </div>
+                                </div>
+                                <p class="text-light mb-0 fs-5" style="opacity: 0.85;">Online stores that convert and run smoothly. We build seamless shopping experiences that drive sales and customer loyalty.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 d-none d-lg-flex justify-content-center">
+                            <div class="tree-node" style="width: 24px; height: 24px; background: #E84404; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 30px rgba(232,68,4,0.8);"></div>
+                        </div>
+                        <div class="col-lg-5"></div>
+                    </div>
+
+                    <!-- Service 4 - Right -->
+                    <div class="row align-items-center mb-5 pb-5">
+                        <div class="col-lg-5"></div>
+                        <div class="col-lg-2 d-none d-lg-flex justify-content-center">
+                            <div class="tree-node" style="width: 24px; height: 24px; background: #E84404; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 30px rgba(232,68,4,0.8);"></div>
+                        </div>
+                        <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.4s">
+                            <div class="service-tree-card p-5 position-relative" style="background: rgba(255,255,255,0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); border-radius: 30px;">
+                                <div class="service-number position-absolute" style="top: -20px; left: 30px; font-size: 5rem; font-weight: 800; color: rgba(232,68,4,0.2); font-family: 'Poppins', sans-serif;">04</div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="service-icon-tree me-3" style="width: 70px; height: 70px; background: linear-gradient(135deg, #E84404 0%, #ff6b35 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 40px rgba(232,68,4,0.5);">
+                                        <i class="fas fa-paint-brush fa-2x text-white"></i>
+                                    </div>
+                                    <h3 class="text-white text-uppercase mb-0" style="font-family: 'Poppins', sans-serif;">UI/UX Design</h3>
+                                </div>
+                                <p class="text-light mb-0 fs-5" style="opacity: 0.85;">Clean layouts and user-first experiences. Beautiful interfaces that guide users and build instant trust with your brand.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="text-center py-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="tree-line mx-auto mb-5" style="width: 4px; height: 60px; background: linear-gradient(180deg, rgba(232,68,4,0.3) 0%, #E84404 100%);"></div>
+                    <a href="#services-tree" class="btn btn-lg px-5 py-4 position-relative overflow-hidden" style="background: linear-gradient(135deg, #E84404 0%, #ff6b35 100%); border: none; border-radius: 50px; font-family: 'Poppins', sans-serif; font-weight: 600; letter-spacing: 2px; color: #fff; box-shadow: 0 15px 40px rgba(232,68,4,0.5);">
+                        <span class="position-relative" style="z-index: 1;">EXPLORE ALL SERVICES <i class="fas fa-arrow-right ms-2"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .services-tree {
+            min-height: 100vh;
+            position: relative;
+        }
+        .services-bg-image {
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        .services-overlay {
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .service-tree-card {
+            transition: all 0.4s ease;
+        }
+        .service-tree-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: rgba(232,68,4,0.5) !important;
+            box-shadow: 0 30px 60px rgba(232,68,4,0.3);
+        }
+        .service-tree-card:hover .service-icon-tree {
+            transform: scale(1.15) rotate(10deg);
+        }
+        .service-icon-tree {
+            transition: all 0.4s ease;
+        }
+        .tree-node {
+            animation: pulse-glow 2s infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(232,68,4,0.6); }
+            50% { box-shadow: 0 0 40px rgba(232,68,4,1); }
+        }
+        /* Tablet screens */
+        @media (max-width: 991px) {
+            .services-bg-image {
+                background-attachment: scroll !important;
+                background-position: 30% top !important;
+            }
+            .service-tree-card {
+                margin-bottom: 2rem;
+            }
+        }
+        /* Mobile screens */
+        @media (max-width: 767px) {
+            .services-bg-image {
+                background-attachment: scroll !important;
+                background-position: 30% top !important;
+            }
+            .services-tree {
+                min-height: auto;
+            }
+        }
+        /* Small mobile screens */
+        @media (max-width: 480px) {
+            .services-bg-image {
+                background-size: cover !important;
+                background-position: 35% top !important;
+            }
+        }
+    </style>
+    <!-- Creative Services Tree Section End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5 bg-secondary">
+        <div class="container py-5">
+            <div class="row g-0 justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="title mx-5 px-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="title-center">
+                            <h5>Ready to Start</h5>
+                            <h1>Let's Build Something Great</h1>
+                        </div>
+                    </div>
+                    <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s">Tell us about your brand and goals. We'll craft a strategy and build a site that converts.</p>
+                    <div class="position-relative wow fadeInUp" data-wow-delay="0.3s">
+                        <input class="form-control border-0 bg-dark rounded-pill w-100 py-4 ps-4 pe-5" type="text"
+                            placeholder="Your email address">
+                        <button type="button" class="btn btn-primary py-3 px-4 position-absolute top-0 end-0 me-2"
+                            style="margin-top: 7px;">Let's Talk</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Industries We Build For Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5>Our Clients</h5>
+                        <h1>Industries We Build For</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-secondary rounded p-4 text-center h-100">
+                        <i class="fas fa-briefcase fa-3x text-primary mb-3"></i>
+                        <h5 class="text-uppercase">Businesses & Startups</h5>
+                        <p class="mb-0">From MVPs to enterprise solutions</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="bg-secondary rounded p-4 text-center h-100">
+                        <i class="fas fa-camera fa-3x text-primary mb-3"></i>
+                        <h5 class="text-uppercase">Creators & Influencers</h5>
+                        <p class="mb-0">Stand out with stunning portfolios</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-secondary rounded p-4 text-center h-100">
+                        <i class="fas fa-hands-helping fa-3x text-primary mb-3"></i>
+                        <h5 class="text-uppercase">NGOs & Community Groups</h5>
+                        <p class="mb-0">Amplify your mission online</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="bg-secondary rounded p-4 text-center h-100">
+                        <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                        <h5 class="text-uppercase">Schools & Training Centers</h5>
+                        <p class="mb-0">Modern learning platforms</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-secondary rounded p-4 text-center h-100">
+                        <i class="fas fa-shopping-cart fa-3x text-primary mb-3"></i>
+                        <h5 class="text-uppercase">E-Commerce Sellers</h5>
+                        <p class="mb-0">Stores that convert and scale</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="bg-secondary rounded p-4 text-center h-100">
+                        <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                        <h5 class="text-uppercase">Agencies (White-Label)</h5>
+                        <p class="mb-0">Reliable dev partner for your clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Industries We Build For End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5 bg-secondary">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5>Results</h5>
+                        <h1>Client Success</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+                <div class="testimonial-item text-center"
+                    data-dot="<img class='img-fluid rounded-circle' src='https://ui-avatars.com/api/?name=Marcus+Chongwani&background=E84404&color=fff&size=100' alt='Marcus Chongwani'>">
+                    <p class="fs-5">"Working with Part Labs has been a game-changer for us. They transformed our website into a sleek, fast, and user-friendly platform that truly represents our brand. The team was professional, responsive, and attentive to every detail. Thanks to Part Labs, our users now enjoy a seamless experience, and our online presence has never looked better!"</p>
+                    <h5 class="text-uppercase">Marcus Chongwani</h5>
+                    <span class="text-primary">InStayHomes, Founder</span>
+                </div>
+                <div class="testimonial-item text-center"
+                    data-dot="<img class='img-fluid rounded-circle' src='https://ui-avatars.com/api/?name=Mulenga+Banda&background=E84404&color=fff&size=100' alt='Mulenga Banda'>">
+                    <p class="fs-5">"Part Labs completely transformed our brand's digital presence. The site they built converts like crazy - we saw a 62% increase in qualified leads within the first month. Their understanding of the Zambian market is unmatched. Truly exceptional work!"</p>
+                    <h5 class="text-uppercase">Mulenga Banda</h5>
+                    <span class="text-primary">Lusaka Tech Solutions, CEO</span>
+                </div>
+                <div class="testimonial-item text-center"
+                    data-dot="<img class='img-fluid rounded-circle' src='https://ui-avatars.com/api/?name=Thandiwe+Phiri&background=E84404&color=fff&size=100' alt='Thandiwe Phiri'>">
+                    <p class="fs-5">"Clean execution, modern design, serious results. Part Labs didn't just build a website - they built a conversion machine. Our bounce rate dropped by 40% and customers love the new experience. Highly recommend them to any Zambian business serious about growth."</p>
+                    <h5 class="text-uppercase">Thandiwe Phiri</h5>
+                    <span class="text-primary">Copperbelt Ventures, Director</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <a href="index.html">
+                <h1 class="display-4 mb-3 text-white text-uppercase"><i
+                        class="fas fa-code me-1"></i>Part Labs</h1>
+            </a>
+            <p class="mb-3">Lusaka, Zambia | +260 977 502 711 | +260 764 534 617</p>
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://wa.link/g7uhfx" target="_blank" rel="noopener" title="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://github.com/jackson-nj" target="_blank" rel="noopener" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://www.linkedin.com/in/jackson-njovu-0559b734a/" target="_blank" rel="noopener" title="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="mailto:jnjovu51@gmail.com" title="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; <a class="border-bottom" href="index.html">Part Labs</a>, All Rights Reserved.</p>
+
+            <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+            <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+            
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top" title="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
