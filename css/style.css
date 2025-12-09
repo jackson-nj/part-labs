@@ -535,7 +535,7 @@
 
 .marquee-content {
     display: flex;
-    animation: scrollMarquee 60s linear infinite;
+    animation: scrollMarquee 90s linear infinite;
     white-space: nowrap;
 }
 
