@@ -97,6 +97,26 @@
         margin-top: 8px;
         border-top: 1px solid var(--bs-light);
     }
+    
+    /* Mobile hamburger menu background */
+    .navbar-collapse {
+        background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('../img/carousel-1.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0 -1rem;
+        padding: 1rem 1.5rem;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .navbar-collapse .navbar-nav {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar-collapse .nav-link {
+        padding: 12px 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
 }
 
 @media (min-width: 992px) {
@@ -495,5 +515,136 @@
     }
     100% {
         background-position: 2000px center;
+    }
+}
+
+
+/*** Brands Marquee ***/
+.brands-marquee {
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: #111;
+}
+
+.marquee-track {
+    display: flex;
+    width: 100%;
+}
+
+.marquee-content {
+    display: flex;
+    animation: scrollMarquee 35s linear infinite;
+    white-space: nowrap;
+}
+
+.brand-item {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.brand-item.text-brand {
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.brand-item.logo-brand {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.brand-item.logo-brand i {
+    margin-right: 10px;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.brand-item::after {
+    content: '|';
+    margin-left: 40px;
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+@keyframes scrollMarquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.brands-marquee:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+
+/*** Mobile Performance Optimizations ***/
+@media (max-width: 768px) {
+    /* Disable heavy animations on mobile */
+    .wow {
+        animation: none !important;
+        visibility: visible !important;
+    }
+    
+    /* Simplify footer background on mobile */
+    .footer {
+        background-image: none !important;
+        background-color: #111 !important;
+        animation: none !important;
+    }
+    
+    .footer::before {
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
+        background: rgba(0, 0, 0, 0.95) !important;
+    }
+    
+    /* Simplify services tree background */
+    .services-tree-section {
+        background-attachment: scroll !important;
+    }
+    
+    /* Speed up marquee on mobile */
+    .marquee-content {
+        animation-duration: 20s !important;
+    }
+    
+    .brand-item {
+        padding: 0 25px;
+        font-size: 0.9rem;
+    }
+    
+    .brand-item::after {
+        margin-left: 25px;
+    }
+    
+    /* Reduce hero height on mobile */
+    .hero-section {
+        height: 80vh !important;
+    }
+}
+
+/* Reduce motion for users who prefer it - but keep marquee running */
+@media (prefers-reduced-motion: reduce) {
+    .wow {
+        animation: none !important;
+        visibility: visible !important;
+    }
+    
+    .footer {
+        animation: none !important;
     }
 }
