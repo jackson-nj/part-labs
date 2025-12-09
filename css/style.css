@@ -535,7 +535,7 @@
 
 .marquee-content {
     display: flex;
-    animation: scrollMarquee 35s linear infinite;
+    animation: scrollMarquee 60s linear infinite;
     white-space: nowrap;
 }
 
@@ -593,12 +593,6 @@
 
 /*** Mobile Performance Optimizations ***/
 @media (max-width: 768px) {
-    /* Disable heavy animations on mobile */
-    .wow {
-        animation: none !important;
-        visibility: visible !important;
-    }
-    
     /* Simplify footer background on mobile */
     .footer {
         background-image: none !important;
