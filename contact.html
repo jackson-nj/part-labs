@@ -137,13 +137,13 @@
                         <strong>Message Sent Successfully!</strong> Thank you for contacting Part Labs. We'll get back to you soon.
                     </div>
                     
-                    <form id="contactForm" action="https://formsubmit.co/jnjovu51@gmail.com" method="POST">
-                        <!-- FormSubmit Configuration -->
-                        <input type="hidden" name="_subject" value="New Contact from Part Labs Website">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="https://part-labs.vercel.app/contact.html?success=true">
-                        <input type="text" name="_honey" style="display:none">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Configuration -->
+                        <input type="hidden" name="access_key" value="b33d38c2-d2bd-4e54-9033-d75a863eb0a2">
+                        <input type="hidden" name="subject" value="New Contact from Part Labs Website">
+                        <input type="hidden" name="redirect" value="https://part-labs.vercel.app/contact.html?success=true">
+                        <input type="hidden" name="from_name" value="Part Labs Website">
+                        <input type="checkbox" name="botcheck" class="d-none">
                         
                         <div class="row g-3">
                             <div class="col-md-6">
