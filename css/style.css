@@ -611,9 +611,9 @@
         background-attachment: scroll !important;
     }
     
-    /* Speed up marquee on mobile */
+    /* Keep marquee slow on mobile too */
     .marquee-content {
-        animation-duration: 20s !important;
+        animation-duration: 90s !important;
     }
     
     .brand-item {
