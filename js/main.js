@@ -12,8 +12,14 @@
     spinner();
     
     
-    // Initiate the wowjs
-    new WOW().init();
+    // Initiate the wowjs with configuration
+    new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 50,
+        mobile: true,
+        live: true
+    }).init();
 
 
     // Sticky Navbar
